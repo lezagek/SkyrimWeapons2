@@ -1,0 +1,24 @@
+mixin createFilter(optionList, typeFilter, materialFilter)
+    details
+        summary Фильтр
+        .rowFlex
+            p=optionList[0]
+                input(type="text")
+        .rowFlex
+            p=optionList[1]
+                include selectOptions
+                +createSelectOptions(typeFilter)
+        .rowFlex
+            p=optionList[2]
+                include selectOptions
+                +createSelectOptions(materialFilter)
+        .rowFlex
+            p=optionList[3]
+                input(type="number" min="0")
+        .rowFlex
+            p=optionList[4]
+                input(type="number" min="0")
+        .rowFlex
+            p=optionList[5]
+                input(type="number" min="0")
+

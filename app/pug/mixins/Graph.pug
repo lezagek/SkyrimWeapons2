@@ -1,0 +1,33 @@
+mixin createGraph(optionList)
+    details
+        summary График
+        .columnFlex
+            p Ось Х:
+            .rowFlex
+                p=optionList[0]
+                    input(type="radio" name = "ox" value = "Type" checked="checked")
+            .rowFlex
+                p=optionList[1]
+                    input(type="radio" name = "ox" value = "Material")
+            br
+        .columnFlex
+            p Ось Y:
+            .rowFlex
+                p=optionList[2]
+                    input(type="checkbox" name = "oy")
+            .rowFlex
+                p=optionList[3]
+                    input(type="checkbox" name = "oy")
+        .columnFlex
+            p Тип:
+            .rowFlex
+                p Точечный
+                    input(type="radio" name = "type" checked="checked")
+            .rowFlex
+                p Гистограмма
+                    input(type="radio" name = "type")
+        input(type="button" value="Построить" id = "graphButton")
+
+
+
+

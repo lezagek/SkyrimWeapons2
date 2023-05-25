@@ -1,0 +1,20 @@
+mixin createMenuBar (title)
+	.menuFlex
+		.menuItem
+			if title == 'The Elder Scrolls'
+					a(href="index.html")
+						span The Elder Scrolls
+			else
+				a(href="index.html") The Elder Scrolls
+		.menuItem
+			if title == 'Галерея'
+				a(href="Галерея.html")
+					span Галерея
+			else
+				a(href="Галерея.html") Галерея
+		.menuItem
+			if title == 'Оружие'
+				a(href="Оружие.html")
+					span Оружие
+			else
+				a(href="Оружие.html") Оружие

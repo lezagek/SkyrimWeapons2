@@ -1,0 +1,89 @@
+padding = 10px
+indentValue = 2vw
+
+.centralBlock
+	//width 100%
+	min-height 700px
+	min-width 100px
+	//margin @padding
+	background-color #45474B
+	display flex
+	flex-direction column
+	color white
+	//font-size 14px
+	font-family arial
+
+	.menuFlex
+		padding padding
+		display flex
+		flex-direction row
+		justify-content space-around
+		background-color #37383B
+		span
+			color black
+			padding 5px;
+		.menuItem
+			a
+				text-decoration none
+				font-weight: bold
+				color white
+			a:hover
+				color grey
+	.content
+		width 80%
+		display flex
+		flex-direction column
+		margin auto
+		padding padding
+.rowFlex
+	display flex
+	flex-direction row
+
+.columnFlex
+	display flex
+	flex-direction column
+
+details
+	//.rowFlex	//Фильтр
+	//	align-items center
+	//	p
+	//		text-align center
+	//.columnFlex
+	//	align-items flex-start
+
+.options	//График, фильтр, сортировка
+	text-align left
+	margin padding
+	padding @margin
+
+h1
+	text-align left
+
+	svg
+	text
+		font 8px Verdana
+
+svg
+	path
+		fill none
+		stroke #333333
+		width 1px
+	line
+		fill none
+		stroke #333333
+		width 1px
+
+svg
+	.grid-line
+		stroke black
+		shape-rendering crispedges
+		stroke-opacity 0.1
+svg
+	.rect
+		border thin solid black
+
+@import textBlock
+@import rowOfImages
+@import textFlex
+@import mainMedia
+@import tableBlock
